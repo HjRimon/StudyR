@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "title": "Google",
+    "short_description": "Comprehensive wedding planning services to make your special day stress-free.",
+    "description": "Your wedding day should be a perfect reflection of your love story, and our team of seasoned wedding planners is dedicated to making that dream a reality. From the very beginning of your wedding journey, we will be by your side, meticulously crafting every aspect of your special day. Our services encompass everything from selecting the ideal venue to coordinating with top-notch vendors, ensuring that every detail is thoughtfully executed. With our extensive experience and attention to detail, you can relax and savor every moment, knowing that your dream wedding is in capable hands.",
+    "image": "https://i.ibb.co/Yk5226G/d2abd662597191-5a9589b09ddf5.jpg",
+    "price": "$2,500 - $5,000",
+    "nam": "Ava Johnson",
+    "img": "https://i.ibb.co/VjZN4VS/woman-riding-on-back-of-man.jpg",
+    "ti": "A gallery of love, laughter, and happily ever after.",
+    "ld": "Capturing moments of love, laughter, and happily ever after in a heartwarming gallery of memories."
+  },
+  {
+    "id": 2,
+    "title": "Samsung",
+    "short_description": "Find the perfect wedding venue that matches your style and budget.",
+    "description": "Choosing the right venue is a pivotal part of your wedding planning process. Our expert venue selection service is designed to help you discover the perfect location that not only matches your style but also fits your budget. Whether you envision a rustic barn nestled in the countryside, a romantic beachfront setting with the sound of waves in the background, or an elegant ballroom dripping in opulence, we'll guide you through the options. Let us handle the logistics and negotiations, ensuring your chosen venue sets the stage for an unforgettable celebration.",
+    "image": "https://i.ibb.co/JKv2VVy/logo-1.jpg",
+    "price": "$500",
+    "nam": "Liam Smith",
+    "img": "https://i.ibb.co/KGF7wH8/close-up-photography-of-heart-shaped-fairy-lite-on-brown-sand.jpg",
+    "ti": "Memories that will last a lifetime.",
+    "ld": "Creating cherished memories that will last a lifetime, filled with love, laughter, and happily ever after."
+  },
+  {
+    "id": 3,
+    "title": "Apple..",
+    "short_description": "Capture the magic of your day with our professional photography and videography services.",
+    "description": "Your wedding day is a collection of precious moments that deserve to be captured in the most beautiful and heartfelt way. Our team of talented photographers and videographers specializes in creating stunning visual memories that you'll treasure for a lifetime. We excel at candid shots that authentically reflect the emotions of your day and cinematic storytelling that turns your wedding into a captivating narrative. Trust us to preserve the magic, love, and laughter of your wedding day with artistry and finesse.",
+    "image": "https://i.ibb.co/BTWy2yN/brown-and-black-building-during-night-time-1.jpg",
+    "price": "$4,000",
+    "nam": "Sophia Davis",
+    "img": "https://i.ibb.co/3WBsxFd/opened-book-beside-crystal-ball.jpg",
+    "ti": "Relive the magic of our special day.",
+    "ld": "Rekindle the enchantment of our special day, where love and magic intertwined to create forever memories."
+  },
+  {
+    "id": 4,
+    "title": "Sony.......",
+    "short_description": "Transform your venue with exquisite floral arrangements and decor.",
+    "description": "Elevate your wedding's ambiance with our exceptional floral and decor services. Our talented artisans and designers will work closely with you to craft breathtaking centerpieces, bouquets, and thematic decor that align perfectly with your vision. Whether you desire an enchanting garden paradise, a glamorous and sophisticated ballroom, or a whimsical fairytale setting, we have the creativity and expertise to transform your chosen venue into a mesmerizing world of beauty and romance.",
+    "image": "https://i.ibb.co/5jpvXqz/a-purple-rectangular-object-with-a-white-logo-on-it-1.jpg",
+    "price": "$1,500 - $3,000",
+    "nam": "Noah Anderson",
+    "img": "https://i.ibb.co/ydQMZpS/man-in-black-suit-kissing-woman-in-white-wedding-dress.jpg",
+    "ti": "Our wedding day, captured in frames of love.",
+    "ld": "Frames filled with love, capturing the essence of our unforgettable wedding day, etched in time."
+  },
+  {
+    "id": 5,
+    "title": "Intel....",
+    "short_description": "Delight your guests with a customized menu that suits your taste and dietary preferences.",
+    "description": "A wedding is a feast of love, and our culinary experts are here to ensure that your feast is nothing short of extraordinary. We will curate a menu that not only delights your taste buds but also reflects your unique preferences and dietary requirements. From delectable appetizers that kickstart the celebration to sumptuous main courses that leave a lasting impression, and finally, to mouthwatering desserts that sweeten the memories, our catering and food services guarantee a culinary experience that matches the elegance of your wedding.",
+    "image": "https://i.ibb.co/ZgDq6H0/a-gold-intel-logo-on-a-black-background-1.jpg",
+    "price": "$3,000 - $6,000",
+    "nam": "Olivia Martinez",
+    "img": "https://i.ibb.co/TRp1WKB/woman-kiss-a-baby-while-taking-picture.jpg",
+    "ti": "Cherished moments from the day our dreams became reality.",
+    "ld": "Cherished moments frozen in time, marking the day our dreams transformed into beautiful reality."
+  },
+  {
+    "id": 6,
+    "title": "AMD.......",
+    "short_description": "Create a lively and memorable atmosphere with our entertainment and DJ services.",
+    "description": "The heart of any great celebration is entertainment, and our team of professional entertainers and DJs is here to ensure your wedding day is filled with joy, energy, and unforgettable moments. From curating the perfect playlist that resonates with your tastes to creating stunning lighting effects that set the mood, we've got every aspect of your entertainment covered. Our goal is to keep the dance floor alive, the smiles wide, and the memories everlasting, making your wedding a lively and memorable event for all.",
+    "image": "https://i.ibb.co/CPtXM3z/black-and-green-lenovo-logo-1.jpg",
+    "price": "$1,200 - $2,500",
+    "nam": "Ethan Clark",
+    "img": "https://i.ibb.co/XJ9rsXZ/woman-sitting-on-grey-cliff.jpg",
+    "ti": "A glimpse into our journey of love and commitment.",
+    "ld": "Offering a glimpse into our journey of love and unwavering commitment, a story told through images."
+  }
+]
