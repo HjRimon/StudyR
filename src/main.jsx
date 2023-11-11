@@ -18,6 +18,7 @@ import Cards from "./Components/Cards/Cards";
 import Bookings from "./Components/Bookings/Bookings";
 import DetailsCard from "./Components/Details/DetailsCard";
 import MySubmission from "./Components/MySubmission";
+import TakeAssignment from "./Components/TakeAssignment";
 
 const router = createBrowserRouter([
   {
@@ -86,6 +87,15 @@ const router = createBrowserRouter([
         element: (
           <PrivateRoutes>
             <UpdateTech></UpdateTech>
+          </PrivateRoutes>
+        ),
+        loader: ({ params }) => fetch(`http://localhost:5000/assignment/${params.id}`),
+      },
+      {
+        path: "/tassignment/:id",
+        element: (
+          <PrivateRoutes>
+            <TakeAssignment></TakeAssignment>
           </PrivateRoutes>
         ),
         loader: ({ params }) => fetch(`http://localhost:5000/assignment/${params.id}`),
