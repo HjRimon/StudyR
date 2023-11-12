@@ -27,7 +27,6 @@ const TakeAssignment = () => {
       cancelButtonText: "No",
     }).then((result) => {
       if (result.isConfirmed) {
-        // First, make the PUT request
         fetch(`https://study-assignment-server-lac.vercel.app/assignment/${_id}`, {
           method: "PUT",
           headers: {
@@ -39,10 +38,8 @@ const TakeAssignment = () => {
           .then((data) => {
             console.log(data);
             if (data.modifiedCount > 0) {
-              // Close the confirmation modal
               setConfirmationModalOpen(false);
 
-              // Now, call the POST request
               handleBookService(event);
             }
           });
