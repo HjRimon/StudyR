@@ -91,22 +91,6 @@ const BrandName = ({ tech, techs, setTechs }) => {
           </div>
         </div>
       </div>
-
-      {/* -- */}
-
-      {/* <div classNameName="card lg:card-side bg-base-100 shadow-xl h-80 ">
-        <figure>
-          <img classNameName="rounded-xl w-[500px] h-[400px] left-0" src={image} />
-        </figure>
-        <div classNameName="card-body">
-          <h2 classNameName="card-title text-6xl">{name}</h2>
-          <div classNameName="card-actions justify-end">
-            <Link to={`/brand`}>
-              <button classNameName="btn btn-primary lg:mt-36">SEE PRODUCTS</button>
-            </Link>
-          </div>
-        </div>
-      </div> */}
     </div>
   );
 };
