@@ -1,46 +1,43 @@
-import { useContext } from "react";
 import { Link, useLoaderData } from "react-router-dom";
-import { AuthContext } from "../../Providers/AuthProvider";
+
 import { Card, CardHeader, CardBody, Typography } from "@material-tailwind/react";
-import swal from "sweetalert";
 
 const DetailsCard = () => {
   const service = useLoaderData();
   const { _id, title, level, image, date, marks, description } = service;
-  const { user } = useContext(AuthContext);
 
   const dynamicStyle = {
     backgroundImage: `url('${image}')`,
   };
 
-  const handleBookService = (event) => {
-    event.preventDefault();
-    const email = user?.email;
-    const booking = {
-      title,
-      email,
-      image,
-      date,
-      marks,
-      level,
-    };
-    console.log(booking);
+  // const handleBookService = (event) => {
+  //   event.preventDefault();
+  //   const email = user?.email;
+  //   const booking = {
+  //     title,
+  //     email,
+  //     image,
+  //     date,
+  //     marks,
+  //     level,
+  //   };
+  //   console.log(booking);
 
-    fetch("http://localhost:5000/bookings", {
-      method: "POST",
-      headers: {
-        "content-type": "application/json",
-      },
-      body: JSON.stringify(booking),
-    })
-      .then((res) => res.json())
-      .then((data) => {
-        console.log(data);
-        if (data.insertedId) {
-          swal("Yeah!", "Taking Assignment Successfully", "success");
-        }
-      });
-  };
+  //   fetch("http://localhost:5000/bookings", {
+  //     method: "POST",
+  //     headers: {
+  //       "content-type": "application/json",
+  //     },
+  //     body: JSON.stringify(booking),
+  //   })
+  //     .then((res) => res.json())
+  //     .then((data) => {
+  //       console.log(data);
+  //       if (data.insertedId) {
+  //         swal("Yeah!", "Taking Assignment Successfully", "success");
+  //       }
+  //     });
+  // };
 
   return (
     <div className="h-[80vh]">

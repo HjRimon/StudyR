@@ -41,6 +41,11 @@ const BookingRow = ({ booking, handleDelete, handleBookingConfirm }) => {
       <td>{date}</td>
       <td>Marks : {marks}</td>
       <th>
+        <Link to={`/getmark/${_id}`}>
+          <button className="btn btn-success text-white mt-6">view</button>
+        </Link>
+      </th>
+      {/* <th>
         {status === "confirm" ? (
           <Link to={`/submit/${_id}`}>
             <span className="font-bold text-white bg-green-400 p-2 rounded-lg">submited</span>
@@ -50,7 +55,7 @@ const BookingRow = ({ booking, handleDelete, handleBookingConfirm }) => {
             pending
           </button>
         )}
-      </th>
+      </th> */}
     </tr>
   );
 };

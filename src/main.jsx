@@ -17,8 +17,8 @@ import Calender from "./Components/Calender";
 import Cards from "./Components/Cards/Cards";
 import Bookings from "./Components/Bookings/Bookings";
 import DetailsCard from "./Components/Details/DetailsCard";
-import MySubmission from "./Components/MySubmission";
 import TakeAssignment from "./Components/TakeAssignment";
+import GetMark from "./Components/GetMark";
 
 const router = createBrowserRouter([
   {
@@ -29,7 +29,6 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Home></Home>,
-        // loader: () => fetch("https://tech-store-server-ivory.vercel.app/tech"),
         loader: () => fetch("http://localhost:5000/assignment"),
       },
       {
@@ -55,23 +54,18 @@ const router = createBrowserRouter([
         loader: () => fetch("http://localhost:5000/assignment"),
       },
       {
+        path: "/getmark/:id",
+        element: <GetMark></GetMark>,
+        loader: ({ params }) => fetch(`http://localhost:5000/bookings/${params.id}`),
+
+      },
+      {
         path: "/details/:id",
         element: (
           <PrivateRoutes>
             <DetailsCard></DetailsCard>,
           </PrivateRoutes>
         ),
-        // loader: () => fetch("http://localhost:5000/assignment"),
-        loader: ({ params }) => fetch(`http://localhost:5000/assignment/${params.id}`),
-      },
-      {
-        path: "/submit/:id",
-        element: (
-          <PrivateRoutes>
-            <MySubmission></MySubmission>
-          </PrivateRoutes>
-        ),
-        // loader: () => fetch("http://localhost:5000/assignment"),
         loader: ({ params }) => fetch(`http://localhost:5000/assignment/${params.id}`),
       },
       {

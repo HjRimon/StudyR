@@ -88,6 +88,11 @@ const BrandName = ({ tech, techs, setTechs }) => {
                 <button className="btn btn-neutral">View</button>
               </Link>
             </div>
+            <div>
+              <button onClick={handleAddCart} className="btn btn-neutral">
+                Take
+              </button>
+            </div>
           </div>
         </div>
       </div>
