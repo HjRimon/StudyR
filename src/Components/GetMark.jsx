@@ -23,7 +23,6 @@ const GetMark = () => {
       cancelButtonText: "No",
     }).then((result) => {
       if (result.isConfirmed) {
-        // First, make the PUT request
         fetch(`https://study-assignment-server-lac.vercel.app/bookings/${_id}`, {
           method: "PUT",
           headers: {
