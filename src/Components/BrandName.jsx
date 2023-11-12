@@ -11,7 +11,7 @@ const BrandName = ({ tech, techs, setTechs }) => {
     if (!favouriteItems) {
       addedFavouritesArray.push(tech);
       localStorage.setItem("favourites", JSON.stringify(addedFavouritesArray));
-      swal("Good job!", "Product added successfully", "success");
+      swal("Good job!", "Assignment added successfully", "success");
     } else {
       const isExits = favouriteItems.find((tech) => tech._id === _id);
 

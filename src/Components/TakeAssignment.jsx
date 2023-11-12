@@ -39,7 +39,6 @@ const TakeAssignment = () => {
             console.log(data);
             if (data.modifiedCount > 0) {
               setConfirmationModalOpen(false);
-
               handleBookService(event);
             }
           });
