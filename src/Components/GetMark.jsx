@@ -33,7 +33,7 @@ const GetMark = () => {
           .then((res) => res.json())
           .then((data) => {
             console.log(data);
-            if (data.matchedCount > 0) {
+            if (data.upsertedCount > 0) {
               setConfirmationModalOpen(false);
               Swal.fire({
                 title: "Good job!",
