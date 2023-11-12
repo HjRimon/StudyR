@@ -10,7 +10,6 @@ const WeddingCard = ({ card }) => {
   const { id, title, image, date, description, marks, level } = card || {};
   return (
     <div data-aos="zoom-out-up" data-aos-offset="300" className="font-pec">
-      {/* -- */}
       <div className="relative grid h-[40rem] w-full max-w-[28rem] flex-col items-end justify-center overflow-hidden rounded-xl bg-white bg-clip-border text-center text-gray-700">
         <div
           style={{ backgroundImage: `url(${image})` }}
@@ -48,22 +47,6 @@ const WeddingCard = ({ card }) => {
           </div>
         </div>
       </div>
-
-      {/* -- */}
-
-      {/* <div classNameName="card lg:card-side bg-base-100 shadow-xl h-80 ">
-        <figure>
-          <img classNameName="rounded-xl w-[500px] h-[400px] left-0" src={image} />
-        </figure>
-        <div classNameName="card-body">
-          <h2 classNameName="card-title text-6xl">{name}</h2>
-          <div classNameName="card-actions justify-end">
-            <Link to={`/brand`}>
-              <button classNameName="btn btn-primary lg:mt-36">SEE PRODUCTS</button>
-            </Link>
-          </div>
-        </div>
-      </div> */}
     </div>
   );
 };
