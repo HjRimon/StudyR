@@ -14,9 +14,6 @@ const Bookings = () => {
     axios.get(url, { withCredentials: true }).then((res) => {
       setBookings(res.data);
     });
-    // fetch(url)
-    //   .then((res) => res.json())
-    //   .then((data) => setBookings(data));
   }, []);
 
   const handleDelete = (id) => {
@@ -30,7 +27,7 @@ const Bookings = () => {
       confirmButtonText: "Delete!",
     }).then((result) => {
       if (result.isConfirmed) {
-        deleteBooking(id); // Call the deleteBooking function if confirmed
+        deleteBooking(id);
       }
     });
   };
