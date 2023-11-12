@@ -14,7 +14,7 @@ const HoneyMone = () => {
     const date = form.date.value;
     const newTech = { title, image, marks, description, level, date };
 
-    fetch("http://localhost:5000/assignment", {
+    fetch("https://study-assignment-server-lac.vercel.app/assignment", {
       method: "POST",
       headers: {
         "content-type": "application/json",

@@ -23,7 +23,7 @@ const DetailsCard = () => {
   //   };
   //   console.log(booking);
 
-  //   fetch("http://localhost:5000/bookings", {
+  //   fetch("https://study-assignment-server-lac.vercel.app/bookings", {
   //     method: "POST",
   //     headers: {
   //       "content-type": "application/json",
@@ -125,7 +125,7 @@ export default DetailsCard;
 //     };
 //     console.log(booking);
 
-//     fetch(`http://localhost:5000/assignment/${_id}`, {
+//     fetch(`https://study-assignment-server-lac.vercel.app/assignment/${_id}`, {
 //       method: "PUT",
 //       headers: {
 //         "content-type": "application/json",

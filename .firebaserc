@@ -1,7 +1,8 @@
 {
   "projects": {
-    "default": "techr-ff95f",
-    "techr-ff95f": "techr-ff95f"
+    "default": "studyr-89b1f",
+    "techr-ff95f": "techr-ff95f",
+    "y": "studyr-89b1f"
   },
   "targets": {},
   "etags": {}

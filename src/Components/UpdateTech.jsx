@@ -15,7 +15,7 @@ const UpdateTech = () => {
     const date = form.date.value;
     const updatedTech = { title, image, marks, description, level, date };
 
-    fetch(`http://localhost:5000/assignment/${_id}`, {
+    fetch(`https://study-assignment-server-lac.vercel.app/assignment/${_id}`, {
       method: "PUT",
       headers: {
         "content-type": "application/json",

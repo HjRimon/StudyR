@@ -24,7 +24,7 @@ const GetMark = () => {
     }).then((result) => {
       if (result.isConfirmed) {
         // First, make the PUT request
-        fetch(`http://localhost:5000/bookings/${_id}`, {
+        fetch(`https://study-assignment-server-lac.vercel.app/bookings/${_id}`, {
           method: "PUT",
           headers: {
             "content-type": "application/json",

@@ -1,5 +1,5 @@
 import { useContext, useState } from "react";
-import { useLoaderData } from "react-router-dom";
+import { useLoaderData, useNavigate } from "react-router-dom";
 import swal from "sweetalert";
 import Swal from "sweetalert2";
 import { AuthContext } from "../Providers/AuthProvider";
@@ -9,6 +9,7 @@ const TakeAssignment = () => {
   const tech = useLoaderData();
   const { _id, title, image, description, level, marks, date, note, pdf } = tech;
   const [isConfirmationModalOpen, setConfirmationModalOpen] = useState(false);
+  const nevigate = useNavigate();
 
   const handleAddTech = (event) => {
     event.preventDefault();
@@ -27,7 +28,7 @@ const TakeAssignment = () => {
     }).then((result) => {
       if (result.isConfirmed) {
         // First, make the PUT request
-        fetch(`http://localhost:5000/assignment/${_id}`, {
+        fetch(`https://study-assignment-server-lac.vercel.app/assignment/${_id}`, {
           method: "PUT",
           headers: {
             "content-type": "application/json",
@@ -64,7 +65,7 @@ const TakeAssignment = () => {
     };
     console.log(booking);
 
-    fetch("http://localhost:5000/bookings", {
+    fetch("https://study-assignment-server-lac.vercel.app/bookings", {
       method: "POST",
       headers: {
         "content-type": "application/json",
@@ -78,6 +79,7 @@ const TakeAssignment = () => {
           swal("Yeah!", "Submitting Assignment Successfully", "success");
         }
       });
+    nevigate("/brand");
   };
 
   return (

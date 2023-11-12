@@ -40,11 +40,6 @@ const BookingRow = ({ booking, handleDelete, handleBookingConfirm }) => {
       <td>{level}</td>
       <td>{date}</td>
       <td>Marks : {marks}</td>
-      {/* <th>
-        <Link to={`/getmark/${_id}`}>
-          <button className="btn btn-success text-white mt-6">view</button>
-        </Link>
-      </th> */}
       <th>
         {status === "confirm" ? (
           <button className="btn btn-ghost">

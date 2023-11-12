@@ -28,7 +28,7 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Home></Home>,
-        loader: () => fetch("http://localhost:5000/assignment"),
+        loader: () => fetch("https://study-assignment-server-lac.vercel.app/assignment"),
       },
       {
         path: "/login",
@@ -41,7 +41,7 @@ const router = createBrowserRouter([
       {
         path: "/assignments",
         element: <Cards></Cards>,
-        loader: () => fetch("http://localhost:5000/assignment"),
+        loader: () => fetch("https://study-assignment-server-lac.vercel.app/assignment"),
       },
       {
         path: "/calender",
@@ -50,7 +50,7 @@ const router = createBrowserRouter([
       {
         path: "/brand",
         element: <Brand></Brand>,
-        loader: () => fetch("http://localhost:5000/assignment"),
+        loader: () => fetch("https://study-assignment-server-lac.vercel.app/assignment"),
       },
       {
         path: "/getmark/:id",
@@ -59,7 +59,8 @@ const router = createBrowserRouter([
             <GetMark></GetMark>
           </PrivateRoutes>
         ),
-        loader: ({ params }) => fetch(`http://localhost:5000/bookings/${params.id}`),
+        loader: ({ params }) =>
+          fetch(`https://study-assignment-server-lac.vercel.app/bookings/${params.id}`),
       },
       {
         path: "/details/:id",
@@ -68,7 +69,8 @@ const router = createBrowserRouter([
             <DetailsCard></DetailsCard>,
           </PrivateRoutes>
         ),
-        loader: ({ params }) => fetch(`http://localhost:5000/assignment/${params.id}`),
+        loader: ({ params }) =>
+          fetch(`https://study-assignment-server-lac.vercel.app/assignment/${params.id}`),
       },
       {
         path: "/orders",
@@ -85,7 +87,8 @@ const router = createBrowserRouter([
             <UpdateTech></UpdateTech>
           </PrivateRoutes>
         ),
-        loader: ({ params }) => fetch(`http://localhost:5000/assignment/${params.id}`),
+        loader: ({ params }) =>
+          fetch(`https://study-assignment-server-lac.vercel.app/assignment/${params.id}`),
       },
       {
         path: "/tassignment/:id",
@@ -94,7 +97,8 @@ const router = createBrowserRouter([
             <TakeAssignment></TakeAssignment>
           </PrivateRoutes>
         ),
-        loader: ({ params }) => fetch(`http://localhost:5000/assignment/${params.id}`),
+        loader: ({ params }) =>
+          fetch(`https://study-assignment-server-lac.vercel.app/assignment/${params.id}`),
       },
       {
         path: "/honeymone",

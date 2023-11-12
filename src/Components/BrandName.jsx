@@ -36,7 +36,7 @@ const BrandName = ({ tech, techs, setTechs }) => {
       confirmButtonText: "Yes, delete it!",
     }).then((result) => {
       if (result.isConfirmed) {
-        fetch(`http://localhost:5000/assignment/${_id}`, {
+        fetch(`https://study-assignment-server-lac.vercel.app/assignment/${_id}`, {
           method: "DELETE",
         })
           .then((res) => res.json())
