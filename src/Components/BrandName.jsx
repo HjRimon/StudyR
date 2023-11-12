@@ -53,7 +53,6 @@ const BrandName = ({ tech, techs, setTechs }) => {
   };
   return (
     <div data-aos="zoom-out-up" data-aos-offset="300" className="font-pec">
-      {/* -- */}
       <div className="relative grid h-[40rem] w-full max-w-[28rem] flex-col items-end justify-center overflow-hidden rounded-xl bg-white bg-clip-border text-center text-gray-700">
         <div
           style={{ backgroundImage: `url(${image})` }}
@@ -96,82 +95,3 @@ const BrandName = ({ tech, techs, setTechs }) => {
 };
 
 export default BrandName;
-// import { Card, CardHeader, CardBody, Typography, Avatar } from "@material-tailwind/react";
-// import { Link } from "react-router-dom";
-// import swal from "sweetalert";
-
-// const BrandName = ({ detail }) => {
-//   const { _id, rating, image, price, desciption, name, brand } = detail || {};
-
-//   const dynamicStyle = {
-//     backgroundImage: `url('${image}')`,
-//   };
-
-//   const handleAddCart = () => {
-//     const addedFavouritesArray = [];
-
-//     const favouriteItems = JSON.parse(localStorage.getItem("favourites"));
-
-//     if (!favouriteItems) {
-//       addedFavouritesArray.push(detail);
-//       localStorage.setItem("favourites", JSON.stringify(addedFavouritesArray));
-//       swal("Good job!", "Product added successfully", "success");
-//     } else {
-//       const isExits = favouriteItems.find((detail) => detail._id === _id);
-
-//       if (!isExits) {
-//         addedFavouritesArray.push(...favouriteItems, detail);
-//         localStorage.setItem("favourites", JSON.stringify(addedFavouritesArray));
-//         swal("Good job!", "Product added successfully", "success");
-//       } else {
-//         swal("Error!", "No Duplicate", "error");
-//       }
-//     }
-//   };
-
-//   return (
-//     <div className="min-h-screen flex items-center justify-center">
-//       <Card shadow={false} className="relative w-full overflow-hidden text-center h-screen">
-//         <CardHeader
-//           floated={false}
-//           shadow={false}
-//           color="transparent"
-//           className="absolute inset-0 m-0 h-full w-full rounded-none bg-cover bg-center"
-//           style={dynamicStyle}
-//         >
-//           <div className="to-bg-black-10 absolute inset-0 h-full w-full bg-gradient-to-t from-black/90 via-black/80" />
-//         </CardHeader>
-//         <CardBody className="relative px-6 md:px-12 py-16">
-//           <Typography variant="h2" color="white" className="mb-4 font-bold  leading-[1.5]">
-//             {name}
-//           </Typography>
-//           <Typography
-//             variant="h5"
-//             className="mb-4 mt-24 text-xl md:text-3xl leading-auto lg:leading-relaxed text-gray-400"
-//           >
-//             {brand}
-//           </Typography>
-//           <Typography
-//             variant="h5"
-//             className="mb-4 mt-24 text-xl md:text-3xl leading-auto lg:leading-relaxed text-gray-400"
-//           >
-//             {desciption}
-//           </Typography>
-//           <Typography variant="h5" className="mb-6 mt-8 text-5xl font-bold text-gray-400">
-//             Price: {price} ৳
-//           </Typography>
-//           <Typography variant="h5" className="mb-4 mt-8 text-4xl font-bold text-gray-400">
-//             Rating : {rating}
-//           </Typography>
-//           <Link>
-//             <button onClick={handleAddCart} className="btn btn-primary mt-6">
-//               Add To Cart
-//             </button>
-//           </Link>
-//         </CardBody>
-//       </Card>
-//     </div>
-//   );
-// };
-
-// export default BrandName;
