@@ -6,7 +6,7 @@ import { AuthContext } from "../Providers/AuthProvider";
 const GetMark = () => {
   const { user } = useContext(AuthContext);
   const tech = useLoaderData();
-  const nevigate = useNavigate();
+  // const nevigate = useNavigate();
   const { _id, title, image, description, level, marks, date, note, pdf } = tech;
   const [isConfirmationModalOpen, setConfirmationModalOpen] = useState(false);
 
@@ -41,7 +41,7 @@ const GetMark = () => {
                 icon: "success",
               });
             }
-            nevigate("/bookings");
+            // nevigate("/bookings");
           });
       }
     });
@@ -51,7 +51,7 @@ const GetMark = () => {
     const link = document.createElement("a");
     link.href = pdf;
     link.target = "_blank";
-    link.download = "your-pdf-file.pdf";
+    link.download = "https://www.africau.edu/images/default/sample.pdf";
     link.click();
   }
 
