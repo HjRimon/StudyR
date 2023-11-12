@@ -58,7 +58,7 @@ const GetMark = () => {
   return (
     <div className="w-[98%] h-auto md:h-[80vh] flex lg:flex-row flex-col justify-center items-center">
       <div>
-        <button className="btn btn-outline btn-accent" onClick={downloadPDF}>
+        <button className="btn btn-outline btn-accent mt-4 md:mt-auto" onClick={downloadPDF}>
           Preview PDF
         </button>
       </div>
