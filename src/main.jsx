@@ -19,7 +19,6 @@ import Bookings from "./Components/Bookings/Bookings";
 import DetailsCard from "./Components/Details/DetailsCard";
 import TakeAssignment from "./Components/TakeAssignment";
 import GetMark from "./Components/GetMark";
-
 const router = createBrowserRouter([
   {
     path: "/",
@@ -55,9 +54,12 @@ const router = createBrowserRouter([
       },
       {
         path: "/getmark/:id",
-        element: <GetMark></GetMark>,
+        element: (
+          <PrivateRoutes>
+            <GetMark></GetMark>
+          </PrivateRoutes>
+        ),
         loader: ({ params }) => fetch(`http://localhost:5000/bookings/${params.id}`),
-
       },
       {
         path: "/details/:id",

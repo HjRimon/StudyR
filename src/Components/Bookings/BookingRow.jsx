@@ -40,22 +40,24 @@ const BookingRow = ({ booking, handleDelete, handleBookingConfirm }) => {
       <td>{level}</td>
       <td>{date}</td>
       <td>Marks : {marks}</td>
-      <th>
+      {/* <th>
         <Link to={`/getmark/${_id}`}>
           <button className="btn btn-success text-white mt-6">view</button>
         </Link>
-      </th>
-      {/* <th>
-        {status === "confirm" ? (
-          <Link to={`/submit/${_id}`}>
-            <span className="font-bold text-white bg-green-400 p-2 rounded-lg">submited</span>
-          </Link>
-        ) : (
-          <button onClick={() => handleBookingConfirm(_id)} className="btn btn-ghost btn-xs">
-            pending
-          </button>
-        )}
       </th> */}
+      <th>
+        {status === "confirm" ? (
+          <button className="btn btn-ghost">
+            <span className="font-bold text-white bg-green-400 p-3 rounded-lg">Successfull</span>
+          </button>
+        ) : (
+          <Link to={`/getmark/${_id}`}>
+            <button onClick={() => handleBookingConfirm(_id)} className="btn btn-warning">
+              Check
+            </button>
+          </Link>
+        )}
+      </th>
     </tr>
   );
 };

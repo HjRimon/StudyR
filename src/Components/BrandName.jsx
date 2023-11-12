@@ -18,7 +18,7 @@ const BrandName = ({ tech, techs, setTechs }) => {
       if (!isExits) {
         addedFavouritesArray.push(...favouriteItems, tech);
         localStorage.setItem("favourites", JSON.stringify(addedFavouritesArray));
-        swal("Good job!", "Product added successfully", "success");
+        swal("Good job!", "Assignment added successfully", "success");
       } else {
         swal("Error!", "No Duplicate", "error");
       }
@@ -43,7 +43,7 @@ const BrandName = ({ tech, techs, setTechs }) => {
           .then((data) => {
             console.log(data);
             if (data.deletedCount > 0) {
-              Swal.fire("Deleted!", "Your Product has been deleted.", "success");
+              Swal.fire("Deleted!", "Your Project has been deleted.", "success");
               const remaining = techs.filter((tec) => tec._id !== _id);
               setTechs(remaining);
             }
@@ -87,11 +87,6 @@ const BrandName = ({ tech, techs, setTechs }) => {
               <Link to={`/details/${_id}`}>
                 <button className="btn btn-neutral">View</button>
               </Link>
-            </div>
-            <div>
-              <button onClick={handleAddCart} className="btn btn-neutral">
-                Take
-              </button>
             </div>
           </div>
         </div>
